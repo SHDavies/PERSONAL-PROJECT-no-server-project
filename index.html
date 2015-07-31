@@ -5,11 +5,11 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="styles.css">
 </head>
-<body ng-controller="polCtrl">
+<body>
 <div class="container">
 	<div class="jumbotron">
 	  <h1>Find your representatives!</h1>
-	  <p>Quickly get the name, phone number, email, and other information about the people representing you in Washington DC</p>
+	  <h3>Quickly get the name, phone number, email, and other information about the people representing you in Washington DC</h3>
 	</div>
 </div>
 
@@ -21,9 +21,11 @@
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular-route.js"></script>
 <script src="./js/app.js"></script>
-<script src="./js/MainController.js"></script>
 <script src="./js/mainService.js"></script>
+<script src="./js/committeeService.js"></script>
 <script src="./routes/zipController.js"></script>
 <script src="./routes/nameController.js"></script>
+<script src="./js/directives/resultsDir.js"></script>
+<script src="./js/directives/committeesDir.js"></script>
 </body>
 </html>
