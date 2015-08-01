@@ -21,7 +21,6 @@
 <hr>
 <div class="container">
 	<div class="row" ng-repeat="rep in representatives">
-		<results-dir search="committeeSearch" rep="rep"></results-dir>
-		<committee ng-show="showCommittee"></committee>
+		<results-dir search="committeeSearch" rep="rep" showCommittee="false" committees="committees"></results-dir>
 	</div>
 </div>

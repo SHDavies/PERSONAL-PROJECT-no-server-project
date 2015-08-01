@@ -1,6 +1,8 @@
-app.directive('committees', function() {
+app.directive('repCommittees', function() {
 	return {
-		restrict: 'E',
+		scope: {
+			committees: '='
+		},
 		templateUrl: './js/directives/committeesTmpl.html'
 	}
 })
