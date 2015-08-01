@@ -6,4 +6,8 @@ app.controller('zipController', function($scope, polService, committeeService) {
 		})
 		$scope.zipSearchBox = '';
 	};
+
+	$scope.committeeSearch = function(repId) {
+		return committeeService.committeeSearch(repId);
+	};
 })
