@@ -10,8 +10,11 @@ app.directive('resultsDir', function() {
 		},
 		link: function(scope, element, attrs) {
 			element.on('click', function() {
-				scope.search(scope.rep.bioguide_id);
-				scope.showCommittee = !scope.showCommittee;
+				scope.search(scope.rep.bioguide_id)
+				.then(function(data) {
+					scope.committees = data;
+					scope.showCommittee = !scope.showCommittee;
+				})
 			})
 		}
 	}

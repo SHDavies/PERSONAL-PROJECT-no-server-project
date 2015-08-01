@@ -9,9 +9,6 @@ app.controller('nameController', function($scope, polService, committeeService) 
 	};
 
 	$scope.committeeSearch = function(repId) {
-		committeeService.committeeSearch(repId)
-		.then(function(data) {
-			$scope.committees = data;
-		})
-	}
+		return committeeService.committeeSearch(repId);
+	};
 })
