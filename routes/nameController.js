@@ -1,4 +1,4 @@
-app.controller('nameController', function($scope, polService, committeeService) {
+app.controller('nameController', function($scope, polService, committeeService, billService) {
 
 	$scope.nameSearch = function() {
 		polService.nameSearch($scope.nameSearchBox)
@@ -10,5 +10,9 @@ app.controller('nameController', function($scope, polService, committeeService) 
 
 	$scope.committeeSearch = function(repId) {
 		return committeeService.committeeSearch(repId);
+	};
+
+	$scope.billSearch = function(repId) {
+		return billService.billSearch(repId);
 	};
 })

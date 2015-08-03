@@ -1,5 +1,5 @@
 <div class="container">
-<h2>Search By:</h2>
+<h2 style="color: white">Search By:</h2>
 	<ul class="nav nav-tabs">
 	  <li role="presentation"><a href="#/zipSearch">Zip</a></li>
 	  <li role="presentation" class="active"><a href="#/nameSearch">Name</a></li>
@@ -21,6 +21,8 @@
 <hr>
 <div class="container">
 	<div class="row" ng-repeat="rep in representatives">
-		<results-dir search="committeeSearch" rep="rep" showCommittee="false" committees="committees"></results-dir>
+
+	<!-- results custom directive, feeds in all functions and variables for children directives -->
+		<results-dir search="committeeSearch" rep="rep" showCommittee="false" committees="committees" bills="bills" bill-search="billSearch"></results-dir>
 	</div>
 </div>

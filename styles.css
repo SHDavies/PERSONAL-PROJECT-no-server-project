@@ -1,7 +1,11 @@
 html, body {
-	background-color: #FCFCFF
+	background-color: #FCFCFF;
 }
 
 .result {
 	cursor: pointer;
+}
+
+.jumbotron {
+	background-color: #E5E5FF;
 }

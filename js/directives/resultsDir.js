@@ -6,13 +6,21 @@ app.directive('resultsDir', function() {
 			search: '=',
 			rep: '=',
 			showCommittee: '=',
-			committees: '='
+			committees: '=',
+			bills: '=',
+			billSearch: '='
 		},
 		link: function(scope, element, attrs) {
+
+			//when clicked, runs committee search and bill search functions, feeds data to children directives and shows those directives
 			element.on('click', function() {
 				scope.search(scope.rep.bioguide_id)
 				.then(function(data) {
 					scope.committees = data;
+				})
+				scope.billSearch(scope.rep.bioguide_id)
+				.then(function(data) {
+					scope.bills = data;
 					scope.showCommittee = !scope.showCommittee;
 				})
 			})

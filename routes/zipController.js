@@ -1,4 +1,4 @@
-app.controller('zipController', function($scope, polService, committeeService) {
+app.controller('zipController', function($scope, polService, committeeService, billService) {
 	$scope.zipSearch = function() {
 		polService.zipSearch($scope.zipSearchBox)
 		.then(function(data) {
@@ -9,5 +9,9 @@ app.controller('zipController', function($scope, polService, committeeService) {
 
 	$scope.committeeSearch = function(repId) {
 		return committeeService.committeeSearch(repId);
+	};
+
+	$scope.billSearch = function(repId) {
+		return billService.billSearch(repId);
 	};
 })
