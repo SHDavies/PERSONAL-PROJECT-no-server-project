@@ -1,4 +1,5 @@
-<div class="col-lg-6 well">
+<div class="col-lg-6">
 	<h2>Bills:</h2>
+	<!-- show short title if it exists, official title otherwise, each title links to the actual bill text -->
 	<p ng-repeat="bill in bills"><a href="{{bill.last_version.urls.html}}" target="_blank">{{bill.short_title || bill.official_title}}</a></p>
 </div>

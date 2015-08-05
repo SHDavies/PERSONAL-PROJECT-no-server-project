@@ -2,10 +2,20 @@ html, body {
 	background-color: #FCFCFF;
 }
 
+body {
+	position: relative;
+}
+
 .result {
 	cursor: pointer;
 }
 
 .jumbotron {
 	background-color: #E5E5FF;
+}
+
+.footer {
+	margin-top: 15px;
+	text-align: center;
+	font-size: 11px;
 }
