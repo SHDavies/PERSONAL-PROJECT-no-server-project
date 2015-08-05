@@ -11,6 +11,7 @@ app.directive('resultsDir', function() {
 			billSearch: '='
 		},
 		link: function(scope, element, attrs) {
+			element.css({cursor: 'pointer'})
 
 			//when clicked, runs committee search and bill search functions, feeds data to children directives and shows those directives
 			element.on('click', function() {

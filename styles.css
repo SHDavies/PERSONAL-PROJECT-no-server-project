@@ -6,10 +6,6 @@ body {
 	position: relative;
 }
 
-.result {
-	cursor: pointer;
-}
-
 .jumbotron {
 	background-color: #E5E5FF;
 }
