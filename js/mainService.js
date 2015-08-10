@@ -15,7 +15,7 @@ angular.module('polApp').service('polService', function($http, $q) {
 	//search legislators by name
 	this.nameSearch = function(name) {
 		var deferred = $q.defer();
-		$http.get('http://congress.api.sunlightfoundation.com/legislators?query=' + name + '&apikey=dac579d765324189876e07b53a5815ce')
+		$http.get('http://congress.api.sunlightfoundation.com/legislators?query=' + name + '&apikey=xxxxxxxxxxx')
 		.then(function(response) {
 			console.log(response);
 			var data = response.data.results;
